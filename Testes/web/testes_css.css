@@ -1,0 +1,67 @@
+/*Texto selecionado*/
+p::selection{
+    background: pink;
+    color: white;
+}
+
+/*Bordas gradiente*/
+#teste{
+    border: 4px solid;
+    border-image:
+    linear-gradient(135deg,
+    #FF0000 0%,
+    #FF00A8 100%) 1;
+}
+
+/*Aplica ao input quando fora do range "min/max"*/
+input[type="number"]:out-of-range{
+    border: solid 3px red;
+}
+
+/*Seletor Lista*/
+::marker{
+    color: red;
+}
+
+/*Background Listrado*/
+.container{
+    background-image:
+        repeating-linear-gradient(
+            -45deg,
+            #000000 0px,
+            #000000 10px,
+            #0D7CB9 10px,
+            #0D7CB9 20px,
+        );
+}
+
+/*Centralizando elemento*/
+#divteste{
+    display: grid;
+    place-items: center;
+}
+
+/*Bordas*/
+#borda1{
+    border-style:dotted;
+}
+#borda2{
+    border-style:dashed;
+}
+#borda3{
+    border-style:double;
+}
+#borda4{
+    border-style:outset;
+}
+#borda5{
+    border-style:groove;
+}
+#borda6{
+    border-style:inset;
+}
+
+/*Back-Drop filter "img transparante"*/
+.container{
+    backdrop-filter:blur(10px);
+}

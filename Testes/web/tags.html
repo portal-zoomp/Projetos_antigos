@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="teste.js" defer></script> <!-- "defer" script roda somente apos HTML carregado -->
+    <link href="testes_css.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Valor min/max aplica css-->
+    <input type="number" min="1" max="10" />
+
+    <!--Seletor Lista-->
+    <ul>
+        <li>Café</li>
+        <li>Refri</li>
+        <li>Água</li>
+    </ul>
+
+    <!--Details/Lista-->
+    <details>
+        <summary>
+            Detalhes / Lista
+        </summary>
+        <p>Item1</p>
+        <p>Item2</p>
+        <p>Item3</p>
+        <p>Item4</p>
+        <p>Item5</p>
+        <p>Item6</p>
+    </details>
+
+    <!--Output para injetar os resultados de um calculo ou ação do usuário => Aqui esta somando os dois "input" que inicia em 50 e outro em 10<= -->
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        0<input type="range" name="b" value="50"/>100
+        +<input type="number" name="a" value="10"/>=
+        <output name="result"></output>
+    </form>
+
+</body>
+</html>
